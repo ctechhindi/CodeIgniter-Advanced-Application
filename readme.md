@@ -12,6 +12,7 @@
 
 # Git Commit's
 
-- Create My_Controller, Include Bootstrap 4 and autoload helper
+- Set Page Header, Menu, Footer and Main Content in Controller
+- Create My_Controller, Include Bootstrap 4 and autoload helpers
 - Installing Codeigniter HMVC Library
 - Setup (Installing Codeigniter)

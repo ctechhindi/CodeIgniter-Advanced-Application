@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
-    <?php
-        echo link_tag('assets\css\bootstrap.min.css');
-    ?>
-    <script src="<?= base_url("assets\js\jquery-3.3.1.slim.min.js") ?>"></script>
-    <script src="<?= base_url("assets\js\popper.min.js") ?>"></script>
-    <script src="<?= base_url("assets\js\bootstrap.min.js") ?>"></script>
-</head>
-<body>
-    <h1>Home Controller</h1>
-</body>
-</html>
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to CodeIgniter 3</h1>
+        <p class="lead">Advanced CodeIgniter Application</p>
+        <hr class="my-4">
+        <p>
+            <a href="https://www.youtube.com/channel/UCfd4AN4UKiWyHDdq-fizQGA">My YouTube Channel </a>
+        </p>
+        <a class="btn btn-primary btn-lg" href="https://goo.gl/ZePemY" role="button">GitHub</a>
+    </div>
+</div>

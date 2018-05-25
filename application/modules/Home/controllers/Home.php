@@ -7,6 +7,10 @@ if (!class_exists('My_Controller')) {
 class Home extends My_Controller
 {
     public function index() {
+        $data['title'] = "Welcome to Home Page";
+        $this->load->view("header", $data);
+        $this->load->view("menu");
         $this->load->view("home");
+        $this->load->view("footer");
     }
 }
