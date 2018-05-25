@@ -6,11 +6,15 @@ if (!class_exists('My_Controller')) {
 
 class Home extends My_Controller
 {
-    public function index() {
-        $data['title'] = "Welcome to Home Page";
-        $this->load->view("header", $data);
-        $this->load->view("menu");
-        $this->load->view("home");
-        $this->load->view("footer");
+    public function __construct() {
+	    parent::__construct();
+    }
+    
+    public function index()
+    {
+        $this->set_layout->_home([
+            'pageTitle'   => 'Welcome to Home Page',
+            'pageContant' => 'home',
+        ]);
     }
 }
