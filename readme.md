@@ -6,8 +6,12 @@
 
 *  PHP 5.6.8
 
+# Libraries
+
+- [CodeIgniter HMVC Library](https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc/src/codeigniter-3.x/)
+
 # Git Commit's
 
-- Installing Codeigniter HMVC Library 
-    - [CodeIgniter HMVC Library](https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc/src/codeigniter-3.x/)
+- Create My_Controller, Include Bootstrap 4 and autoload helper
+- Installing Codeigniter HMVC Library
 - Setup (Installing Codeigniter)

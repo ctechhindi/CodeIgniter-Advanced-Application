@@ -1,8 +1,12 @@
-<?php
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller
+if (!class_exists('My_Controller')) {
+    require_once FCPATH.'application/core/My_Controller.php';
+}
+
+class Home extends My_Controller
 {
     public function index() {
-        echo "Home Controller Index";
+        $this->load->view("home");
     }
 }
