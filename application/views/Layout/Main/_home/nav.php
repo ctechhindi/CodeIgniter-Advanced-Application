@@ -11,9 +11,9 @@
             </li> -->
         </ul>
         <div class="form-inline my-2 my-lg-0">
-            <button class="btn btn-primary my-2 my-sm-0">Register</button>
+            <a href="<?= base_url('register') ?>" class="btn btn-primary my-2 my-sm-0">Register</a>
             &nbsp;
-            <button class="btn btn-success my-2 my-sm-0">Login</button>
+            <a href="<?= base_url('login') ?>" class="btn btn-success my-2 my-sm-0">Login</a>
         </div>
     </div>
 </nav>
