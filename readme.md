@@ -16,6 +16,7 @@
 
 # Git Commit's
 
+- Form validation on user registration form
 - Create user module and also create login and register page in it.
 - Set Page Header, Menu, Footer and Main Content with Library
 - Set Page Header, Menu, Footer and Main Content in Controller
