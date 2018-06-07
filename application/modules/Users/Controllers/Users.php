@@ -17,8 +17,8 @@ class Users extends My_Controller
     public function register()
     {
         $this->form_validation->set_rules('fullname', 'Full Name', 'trim|required|max_length[50]');
-        $this->form_validation->set_rules('email', 'Email', 'trim|required|max_length[50]|is_unique[users.email]|valid_email',[
-            'is_unique' => "This %s already exists please enter another email"
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|max_length[50]|callback_email_check|valid_email',[
+            'is_unique' => "This %s already exists please enter another email",
         ]);
         $this->form_validation->set_rules('username', 'Username', 'trim|required|alpha_numeric|is_unique[users.username]|max_length[50]',[
             'is_unique' => "This %s already exists please enter another username"
@@ -38,6 +38,20 @@ class Users extends My_Controller
         else
         {
             echo 'formsuccess';
+        }
+    }
+
+    public function email_check($str)
+    {
+        if ($str == 'jeevan15498@gmail.com')
+        {
+            // Use Users Model for check email in database
+            $this->form_validation->set_message('email_check', 'The {field} field can not be the word "test"');
+            return FALSE;
+        }
+        else
+        {
+            return TRUE;
         }
     }
 
